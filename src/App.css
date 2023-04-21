@@ -1,6 +1,6 @@
 .app-wrapper {
   margin: 0 auto;
-  width: 900px;
+  width: 1200px;
   max-width: 1200px;
   display: grid;
   grid-template-columns: 2fr 10fr;
@@ -11,30 +11,6 @@
   grid-gap: 5px;
 }
 
-.header {
-  grid-area: h;
-  background-color: aquamarine;
-  border-radius: 3em 1em;
-}
 
-.header img {
-  width: 50px;
-  padding-left: 20px;
-}
 
-.nav {
-  grid-area: n;
-  background-color: aquamarine;
-  border-top-left-radius: 3em;
-  padding: 20px;
-}
 
-.content {
-  grid-area: c;
-  background-color: rgb(238, 248, 245);
-}
-
-.content img {
-  width: 500px;
-  height: 100px;
-}
