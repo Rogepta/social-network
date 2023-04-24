@@ -5,5 +5,8 @@
 .item img {
   width: 80px;
   height: 80px;
-  border-radius: 30px;
+  border-radius: 50%;
+}
+.item {
+  margin-bottom: 5px;
 }
