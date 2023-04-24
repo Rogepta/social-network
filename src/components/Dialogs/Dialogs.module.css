@@ -1,8 +1,14 @@
-.content img {
-  width: 500px;
-  height: 100px;
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
 }
 
-.item {
-  color: burlywood;
+.dialogItems a {
+  display: block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.active {
+  color: gold !important;
 }
