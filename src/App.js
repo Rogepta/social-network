@@ -10,6 +10,7 @@ import News from "./components/News/News";
 import Settings from "./components/Settings/Setting";
 
 function App(props) {
+  debugger;
   return (
     <BrowserRouter>
       <div className="app-wrapper">
@@ -19,13 +20,11 @@ function App(props) {
           <Routes>
             <Route
               path="/profile"
-              element={<Profile postsData={props.postsData} />}
+              element={<Profile state={props.state.profilePage} />}
             />
             <Route
               path="/dialogs/*"
-              element={
-                <Dialogs dialogs={props.dialogs} messages={props.messages} />
-              }
+              element={<Dialogs state={props.state.dialogsPage} />}
             />
             <Route path="/news" element={<News />} />
             <Route path="/music" element={<Music />} />
