@@ -3,7 +3,6 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import MyPosts from "./MyPosts/MyPosts";
 
 const Profile = (props) => {
-  debugger;
   return (
     <div>
       <ProfileInfo />
