@@ -1,8 +1,9 @@
 import React from "react";
 import s from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
+import Friends from "./Friends/Friends";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const setActive = ({ isActive }) => (isActive ? `${s.activeLink}` : "");
 
   return (
@@ -32,6 +33,7 @@ const Navbar = () => {
           Settings
         </NavLink>
       </div>
+      <Friends dialogs={props.state.dialogs} />
     </nav>
   );
 };
