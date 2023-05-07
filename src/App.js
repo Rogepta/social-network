@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import Music from "./components/Music/Music";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Setting";
+import store from "./redux/state";
 
 function App(props) {
   return (
@@ -21,15 +22,11 @@ function App(props) {
             element={
               <Profile
                 profilePage={props.state.profilePage}
-                addPost={props.addPost}
-                updateNewPostText={props.updateNewPostText}
+                dispatch={props.dispatch}
               />
             }
           />
-          <Route
-            path="/dialogs/*"
-            element={<Dialogs state={props.state.dialogsPage} />}
-          />
+          <Route path="/dialogs/*" element={<Dialogs store={props.store} />} />
           <Route path="/news" element={<News />} />
           <Route path="/music" element={<Music />} />
           <Route path="/settings" element={<Settings />} />
